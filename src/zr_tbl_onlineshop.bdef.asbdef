@@ -1,0 +1,54 @@
+  managed with additional save with full data
+  implementation in class ZBP_R_ONLINESHOP_M_014 unique;
+  strict ( 2 );
+  with draft;
+
+  define behavior for ZR_TBL_ONLINESHOP alias shop
+  persistent table ztbl_onlineshop
+  draft table ztbl_d_onlneshop
+  etag master LocalLastChangedAt
+  lock master total etag LastChangedAt
+  authorization master ( global )
+
+  {
+    field ( readonly )
+    Creationdate, orderId, deliverydate,
+    LocalCreatedBy,
+    LocalCreatedAt,
+    LocalLastChangedBy,
+    LocalLastChangedAt,
+    LastChangedAt;
+
+    field ( numbering : managed, readonly )
+    OrderUuid;
+
+    field ( mandatory )
+    OrderedItem;
+
+    create;
+    update;
+    delete;
+
+    event ItemIsOrdered parameter ZI_AB_ITEM_ORDER_M_014; // Business Event Name 'ItemIsOrdered'
+
+    draft action Activate optimized;
+    draft action Discard;
+    draft action Edit;
+    draft action Resume;
+    draft determine action Prepare;
+
+    mapping for ztbl_onlineshop
+      {
+        OrderUuid          = order_uuid;
+        OrderId            = order_id;
+        Ordereditem        = ordereditem;
+        Deliverydate       = deliverydate;
+        Creationdate       = creationdate;
+        LocalCreatedBy     = local_created_by;
+        LocalCreatedAt     = local_created_at;
+        LocalLastChangedBy = local_last_changed_by;
+        LocalLastChangedAt = local_last_changed_at;
+        LastChangedAt      = last_changed_at;
+      }
+
+  }

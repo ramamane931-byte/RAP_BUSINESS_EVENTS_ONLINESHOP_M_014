@@ -1,0 +1,6 @@
+@EndUserText.label: 'ZC_ONLINESHOP_M_014'
+@MappingRole: true
+define role ZC_ONLINESHOP_M_014 {
+  grant select on ZC_ONLINESHOP_M_014
+  where INHERITING CONDITIONS FROM ENTITY ZR_TBL_ONLINESHOP REPLACING { ROOT WITH _BaseEntity };
+}

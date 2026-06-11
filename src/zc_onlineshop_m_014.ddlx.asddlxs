@@ -1,0 +1,139 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'OrderUUID'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'OrderUUID'
+annotate view ZC_ONLINESHOP_M_014 with
+{
+  @EndUserText.label: 'OrderUUID'
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 10 , 
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @UI.identification: [ {
+    position: 10 , 
+    label: 'OrderUUID'
+  } ]
+  @UI.lineItem: [ {
+    position: 10 , 
+    label: 'OrderUUID'
+  } ]
+  @UI.selectionField: [ {
+    position: 10 
+  } ]
+  OrderUUID;
+  
+  @EndUserText.label: 'OrderID'
+  @UI.identification: [ {
+    position: 20 , 
+    label: 'OrderID'
+  } ]
+  @UI.lineItem: [ {
+    position: 20 , 
+    label: 'OrderID'
+  } ]
+  @UI.selectionField: [ {
+    position: 20 
+  } ]
+  OrderID;
+  
+  @EndUserText.label: 'Ordereditem'
+  @UI.identification: [ {
+    position: 30 , 
+    label: 'Ordereditem'
+  } ]
+  @UI.lineItem: [ {
+    position: 30 , 
+    label: 'Ordereditem'
+  } ]
+  @UI.selectionField: [ {
+    position: 30 
+  } ]
+  Ordereditem;
+  
+  @EndUserText.label: 'Deliverydate'
+  @UI.identification: [ {
+    position: 40 , 
+    label: 'Deliverydate'
+  } ]
+  @UI.lineItem: [ {
+    position: 40 , 
+    label: 'Deliverydate'
+  } ]
+  @UI.selectionField: [ {
+    position: 40 
+  } ]
+  Deliverydate;
+  
+  @EndUserText.label: 'Creationdate'
+  @UI.identification: [ {
+    position: 50 , 
+    label: 'Creationdate'
+  } ]
+  @UI.lineItem: [ {
+    position: 50 , 
+    label: 'Creationdate'
+  } ]
+  @UI.selectionField: [ {
+    position: 50 
+  } ]
+  Creationdate;
+  
+  @UI.identification: [ {
+    position: 60 
+  } ]
+  @UI.lineItem: [ {
+    position: 60 
+  } ]
+  @UI.selectionField: [ {
+    position: 60 
+  } ]
+  LocalCreatedBy;
+  
+  @UI.identification: [ {
+    position: 70 
+  } ]
+  @UI.lineItem: [ {
+    position: 70 
+  } ]
+  @UI.selectionField: [ {
+    position: 70 
+  } ]
+  LocalCreatedAt;
+  
+  @UI.identification: [ {
+    position: 80 
+  } ]
+  @UI.lineItem: [ {
+    position: 80 
+  } ]
+  @UI.selectionField: [ {
+    position: 80 
+  } ]
+  LocalLastChangedBy;
+  
+  @UI.identification: [ {
+    position: 90 
+  } ]
+  @UI.lineItem: [ {
+    position: 90 
+  } ]
+  @UI.selectionField: [ {
+    position: 90 
+  } ]
+  LocalLastChangedAt;
+  
+  @UI.identification: [ {
+    position: 100 
+  } ]
+  @UI.lineItem: [ {
+    position: 100 
+  } ]
+  @UI.selectionField: [ {
+    position: 100 
+  } ]
+  LastChangedAt;
+}

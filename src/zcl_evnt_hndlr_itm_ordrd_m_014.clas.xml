@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_EVNT_HNDLR_ITM_ORDRD_M_014</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Class for Event Handler Item Ordr M 014</DESCRIPT>
+    <CATEGORY>07</CATEGORY>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+    <CLSDEFINT>ZR_TBL_ONLINESHOP</CLSDEFINT>
+   </VSEOCLASS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

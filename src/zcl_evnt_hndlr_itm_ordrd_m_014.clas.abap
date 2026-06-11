@@ -1,0 +1,14 @@
+CLASS zcl_evnt_hndlr_itm_ordrd_m_014 DEFINITION
+  PUBLIC
+  FINAL FOR EVENTS OF zr_tbl_onlineshop "" Root CDS Entity 'ZR_TBL_ONLINESHOP'
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+
+
+CLASS zcl_evnt_hndlr_itm_ordrd_m_014 IMPLEMENTATION.
+ENDCLASS.

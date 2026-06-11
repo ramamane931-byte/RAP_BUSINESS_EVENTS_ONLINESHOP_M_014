@@ -1,0 +1,12 @@
+@EndUserText: {
+  label: 'Service Defn for ZC_ONLINESHOP_M_014'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZC_ONLINESHOP_M_014'
+  }
+}
+define service ZSD_ZONLINESHOP_OV4_M_014
+  provider contracts odata_v4_ui {
+  expose ZC_ONLINESHOP_M_014 as shop;
+}
