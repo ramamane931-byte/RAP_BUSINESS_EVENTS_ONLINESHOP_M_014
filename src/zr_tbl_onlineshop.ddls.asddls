@@ -1,9 +1,9 @@
 @AccessControl.authorizationCheck: #MANDATORY
 @Metadata.allowExtensions: true
 @ObjectModel.sapObjectNodeType.name: 'ZONLINESHOP'
-@EndUserText.label: '###GENERATED Core Data Service Entity'
+@EndUserText.label: '###GENERATED Entity for Online Shop'
 define root view entity ZR_TBL_ONLINESHOP
-  as select from ZTBL_ONLINESHOP as shop
+  as select from ztbl_onlineshop as shop
 {
   key order_uuid as OrderUUID,
   order_id as OrderID,
